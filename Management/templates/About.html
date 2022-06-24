@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <style>
+        .about
+        {
+            height: 100vh;
+            width: 100%;
+            /* background-color: #f1f2f3; */
+            background-image: url("https://d3aux7tjp119y2.cloudfront.net/images/Tak2-CMSTemplate_IrMZHla.width-1650.jpg");
+            background-size: 100%;
+           
+        }
+        .container
+        {
+            /* border: 1px solid; */
+            position: relative;
+           
+            height: 600px;
+            width: 80%;
+            top: 200px;
+            
+        }
+        .container > .article
+        {
+            position: relative;
+            left: -10px;
+            background-color: #4f4a4a;
+        }
+        .article
+        {
+            /* background-color: red; */
+            padding: 20px;
+            height: 100%;
+            width: 50%;
+            float: left;
+        }
+        .image
+        {
+            /* background-color: orange; */
+            height: 100%;
+            width: 50%;
+            float: right;
+            background-image: url("https://preview.colorlib.com/theme/buri/img/xabout.png.pagespeed.ic.VlfjiV_Qeq.webp");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            position: relative;
+            left: -10px;
+            /* background-position: ; */
+        }
+        .article > h4
+        {
+            color: #edc472;
+            font-family: 'Secular One', sans-serif;
+            /* font-size: 35px; */
+            /* text-align: center; */
+        }
+        h1
+        {
+            color: #d9a19a;
+            margin-top: 50px;
+
+            font-family: 'Staatliches', cursive;
+        }
+        .article > p
+        {
+            color:#fff;
+            text-align: justify;
+            padding: 15px;
+            font-family: 'Satisfy', cursive;
+            font-size: 22px;
+            text-indent: 50px;
+        
+            letter-spacing: 2px;
+        }
+        .article > button
+        {
+            background-color: #000;
+            color: #fff;
+            border: none;
+            height: 50px;
+            width: 150px;
+            border-radius: 5px;
+        }
+        
+        
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+</head>
+<body>
+    {% block content %}
+
+        {% include 'nav.html' %}
+
+        
+
+    {% endblock content %}
+
+    <section class="about">
+
+        <div class="container">
+
+            <div class="article">
+
+                <h4>About Us</h4>
+                <h1>
+                    Delicious food provider since 1990
+                </h1>
+                <p>
+                    Good lights it very to above. Days image to sea. Over there seasons and spirit beast in. Greater bearing creepeth very behold fourth night morning seed moved.
+
+
+                </p>
+                <p>
+                    Good lights it very to above. Days image to sea. Over seasons and spirit beast in over greater bearing creepeth.
+                </p>
+
+                <button>Learn More</button>
+
+            </div>
+            <div class="image"></div>
+
+        </div>
+
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    
+</body>
+</html>

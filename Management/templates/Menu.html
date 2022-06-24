@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<style>
+    .menu
+    {
+        height: 100vh;
+        width: 100%;
+        background-color: #f1f2f5;
+        position: fixed;
+    }
+    .menu_items
+    {
+        /* border: 1px solid; */
+        margin-top: 200px;
+        height: 600px;
+        margin-left: 10%;
+        width: 80%;
+        
+        
+    }
+    .item
+    {
+        margin-top: 20px;
+        margin-left: 12px;
+        height: 150px;
+        width: 49%;
+        display: block;
+        float: left;
+        /* border: 1px solid; */
+        box-shadow: 4px 5px 10px #333;
+    }
+    .item > img
+    {
+        width: 30%;
+        height: 100%;
+        float: left
+    }
+    .item > h4
+    {
+        margin-left: 300px;
+        margin-top: 10px;
+    }
+    .item > p
+    {
+        margin-left: 250px;
+        margin-top: 10px;
+        font-family: 'Patrick Hand', cursive;
+        font-size: 24px;
+        /* text-align: center; */
+    }
+    .item > button
+    {
+        height: 40px;
+        margin-left: 150px;
+        width: 100px;
+        border: none;
+        color: #fff;
+        border-radius: 5px;
+        background-color: #125bb5;
+        transition:.8s;
+    }
+    .item > button:hover{
+        background-color: #ab473e;
+    }
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+<body>
+    {% block content %}
+
+        {% include 'nav.html' %}
+
+        
+
+    {% endblock content %}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <section class="menu">
+        <div class="menu_items">
+
+            <div class="item">
+                <img src="https://media.istockphoto.com/photos/barbeque-pulled-pork-sandwiches-picture-id464848566?s=612x612">
+
+                <h4>PORK SANDWICH</h4>
+                <p>They're wherein heaven seed hath nothing</p>
+                <button> Rs400.00 /-</button>
+            </div>
+            <div class="item">
+                <img src="https://www.shorelocalnews.com/wp-content/uploads/2022/04/monkeybread.jpg">
+
+                <h4>EASTER DELIGHT</h4>
+                <p>They're wherein heaven seed hath nothing</p>
+                <button> Rs200.00 /-</button>
+            </div>
+            <div class="item">
+                <img src="https://ajinomoto.co.in/wp-content/uploads/2017/12/Chicken-Biriyani.jpg">
+
+                <h4>Biriyani</h4>
+                <p>Biryani is a mixed rice dish Indian subcontinent.</p>
+                <button> Rs500.00 /-</button>
+            </div>
+            <div class="item">
+                <img src="https://media.istockphoto.com/photos/idly-sambar-or-idli-with-sambhar-and-green-red-chutney-popular-south-picture-id1024549286?s=612x612">
+
+                <h4>Idly</h4>
+                <p>Idli or idly is a type of savoury rice cake</p>
+                <button> Rs40.00 /-</button>
+            </div>
+            <div class="item">
+                <img src="https://media.istockphoto.com/photos/detail-of-beef-burgers-and-sausages-cooking-on-a-barbecue-picture-id1238477698?s=612x612">
+
+                <h4>Grill</h4>
+                <p>Barbecue consists of chicken parts or entire chickens</p>
+                <button> Rs400.00 /-</button>
+            </div>
+            <div class="item">
+                <img src="https://media.istockphoto.com/photos/barbecue-chicken-wings-close-up-on-wooden-tray-picture-id593297368?s=612x612">
+
+                <h4>Chicken Wings</h4>
+                <p>wings have gained in popularity in the india and abroad</p>
+                <button> Rs250.00 /-</button>
+            </div>
+
+        </div>
+
+    </section>
+</body>
+</html>
